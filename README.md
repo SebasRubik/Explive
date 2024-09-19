@@ -20,7 +20,8 @@ Explive es una aplicación móvil para Android que transforma la experiencia asi
 
 - **Información de Eventos**: Encuentra conciertos en toda Colombia basados en tus gustos de Spotify.
 - **Planificador de Rutas**: Obtén direcciones hasta el lugar del evento.
-- **Integraciones**: Spotify para playlists de eventos, Google Maps para navegación.
+- **Integraciones**: Spotify para playlists de eventos (Con la actualización del API se perdio este feature), Google Maps para navegación.
+- **Firebase**: Almacenamiento de información usando Firebase.
 
 ## Requisitos Previos
 
@@ -28,26 +29,12 @@ Explive es una aplicación móvil para Android que transforma la experiencia asi
 - Dispositivo Android con versión 10
 - Conexión a internet para acceder a las APIs y recursos en línea
 
-## Repositorio
-
-https://github.com/Intro-CompuMovil/Explive
-
 ## APIs y Dependencias
 
 - Spotify API: Para listar música relacionada con eventos y crear playlists.
 - Google Maps API: Para servicios de mapas y navegación.
 
 ## Contacto
-
-Samuel Peña Garcia 
-penags@javeriana.edu.co
-https://github.com/Sxmuu
-
-
-Tomas de Aza Marquez
-tomas-deazam@javerian.edu.co
-https://github.com/TommyDS2005
-
 
 Juan Sebastian Cordoba Valderrama
 juans-cordoba@javeriana.edu.co
