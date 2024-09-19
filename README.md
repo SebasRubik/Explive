@@ -8,7 +8,6 @@
 - [Funcionalidades](#funcionalidades)
 - [Requisitos Previos](#requisitos-previos)
 - [Uso](#uso)
-- [Repositorio](#Repositorio)
 - [APIs y Dependencias](#apis-y-dependencias)
 - [Contacto](#contacto)
 
@@ -37,7 +36,9 @@ Explive es una aplicación móvil para Android que transforma la experiencia asi
 ## Contacto
 
 Juan Sebastian Cordoba Valderrama
+
 juans-cordoba@javeriana.edu.co
+
 https://github.com/SebasRubik
 
 
