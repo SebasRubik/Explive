@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "478854662028",
+    "firebase_url": "https://explive-be027-default-rtdb.firebaseio.com",
+    "project_id": "explive-be027",
+    "storage_bucket": "explive-be027.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:478854662028:android:fac7c453b0925f851938a9",
+        "android_client_info": {
+          "package_name": "com.example.explive"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCr6RbFyTAecueDzrp8SPrzYUoP3DdcOGw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

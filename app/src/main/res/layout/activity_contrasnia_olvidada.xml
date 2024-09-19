@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/fondoexplive"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:paddingTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="¿Olvidaste tu\ncontraseña?"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:fontFamily="@font/montserratb"
+        />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ContrasniaOlvidada"
+        android:orientation="vertical"
+        android:gravity="center">
+
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:text="No te preocupes, ingresa tu correo electrónico y te enviaremos un enlace para reestablecerla."
+            android:textSize="19.2sp"
+            android:fontFamily="@font/montserratsemibold"
+            />
+
+        <EditText
+            android:layout_margin="20dp"
+            android:hint="Correo"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:fontFamily="@font/montserratsemibold"
+            android:textColorHint="@color/purple_Explive"
+            android:background="@drawable/edittext_background"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enviar"
+            android:layout_gravity="center"
+            android:background="@drawable/buttonbackground"
+            android:textColor="@color/white"
+            android:fontFamily="@font/montserratsemibold"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:paddingTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Explive"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:fontFamily="@font/montserratb"
+            />
+
+        <ImageView
+            android:paddingTop="10dp"
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:srcCompat="@drawable/lexplive" />
+    </LinearLayout>
+
+</FrameLayout>

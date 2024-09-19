@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ProyectoEntrega1"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".RedirectSpotify"
+            android:exported="false" />
+        <activity
+            android:name=".Spotify"
+            android:exported="true"
+            android:launchMode="singleInstance">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="callback"
+                    android:scheme="myapp" />
+            </intent-filter>
+        </activity>
+        <!--
+             TODO: Before you run your application, you need a Google Maps API key.
+
+             To get one, follow the directions here:
+
+                https://developers.google.com/maps/documentation/android-sdk/get-api-key
+
+             Once you have your API key (it starts with "AIza"), define a new property in your
+             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
+             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="${MAPS_API_KEY}" />
+
+        <activity
+            android:name=".Mapasitio"
+            android:exported="false"
+            android:label="@string/title_activity_mapasitio" />
+        <activity
+            android:name=".TotalConciertos"
+            android:exported="false" />
+        <activity
+            android:name=".PerfilUsuario"
+            android:exported="false" />
+        <activity
+            android:name=".LinkConcierto"
+            android:exported="false" />
+        <activity
+            android:name=".EliminarConcierto"
+            android:exported="false" />
+        <activity
+            android:name=".AgregarConcierto"
+            android:exported="false"
+            android:label="@string/title_activity_agregar_concierto"
+            android:theme="@style/Theme.ProyectoEntrega1" />
+        <activity
+            android:name=".MenuAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".Momentos"
+            android:exported="false"
+            android:label="@string/title_activity_momentos"
+            android:theme="@style/Theme.ProyectoEntrega1" />
+        <activity
+            android:name=".DetallesConcierto"
+            android:exported="false" />
+        <activity
+            android:name=".Menu"
+            android:exported="false" />
+        <activity
+            android:name=".ContrasniaOlvidada"
+            android:exported="false" />
+        <activity
+            android:name=".Registro"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

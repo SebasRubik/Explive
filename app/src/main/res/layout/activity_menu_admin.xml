@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/fondoexplive"
+        android:scaleType="centerCrop" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MenuAdmin"
+        android:paddingTop="20dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Explive - Admin"
+            android:fontFamily="@font/montserratb"
+            android:textSize="30sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:srcCompat="@drawable/lexplive"
+            app:layout_constraintTop_toBottomOf="@id/textView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="20dp" />
+
+        <LinearLayout
+            android:id="@+id/layoutBotones"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            app:layout_constraintTop_toBottomOf="@id/imageView3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/btnAgregar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/buttonbackground"
+                android:textSize="17sp"
+                android:fontFamily="@font/montserratsemibold"
+                android:layout_marginRight="5dp"
+                android:text="Añadir evento" />
+
+            <Button
+                android:id="@+id/btnEliminar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Eliminar evento"
+                android:textSize="17sp"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                android:fontFamily="@font/montserratsemibold"
+                android:background="@drawable/buttonbackground" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/bienvenidaAdmin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¡Bienvenido!, estos son los conciertos registrados:"
+            android:textSize="22sp"
+            android:fontFamily="@font/montserratsemibold"
+            android:textAlignment="center"
+            app:layout_constraintTop_toBottomOf="@id/layoutBotones"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="20dp"
+            />
+
+        <ListView
+            android:id="@+id/listViewAdmon"
+            android:layout_width="0dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintTop_toBottomOf="@id/bienvenidaAdmin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <Button
+            android:id="@+id/btnCerrarSesion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/montserratb"
+            android:text="Cerrar Sesión"
+            android:textSize="18sp"
+            android:backgroundTint="#FF0000"
+            android:textColor="@android:color/white"
+            app:layout_constraintTop_toBottomOf="@id/listViewAdmon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

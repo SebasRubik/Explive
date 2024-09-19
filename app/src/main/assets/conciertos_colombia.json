@@ -1,0 +1,39 @@
+{
+  "conciertos": {
+    "0": {
+      "artista": "Shakira",
+      "ciudad": "Barranquilla",
+      "centro_de_eventos": "Estadio Metropolitano Roberto Melendez",
+      "fecha": "2024-06-15",
+      "hora": "20:00"
+    },
+    "1": {
+      "artista": "Juanes",
+      "ciudad": "Medellin",
+      "centro_de_eventos": "Plaza de Toros La Macarena",
+      "fecha": "2024-07-22",
+      "hora": "20:00"
+    },
+    "2": {
+      "artista": "Carlos Vives",
+      "ciudad": "Santa Marta",
+      "centro_de_eventos": "Parque de los Novios",
+      "fecha": "2024-08-05",
+      "hora": "20:00"
+    },
+    "3": {
+      "artista": "Maluma",
+      "ciudad": "Bogota",
+      "centro_de_eventos": "Movistar Arena",
+      "fecha": "2024-09-10",
+      "hora": "20:00"
+    },
+    "4": {
+      "artista": "Karol G",
+      "ciudad": "Cali",
+      "centro_de_eventos": "Estadio Olimpico Pascual Guerrero",
+      "fecha": "2024-10-03",
+      "hora": "20:00"
+    }
+  }
+}

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="4dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/fondoexplive"
+        android:scaleType="centerCrop" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/eventTitle"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Nombre Artista"
+            android:fontFamily="@font/montserratb"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/genre"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Género"
+            android:fontFamily="@font/montserratsemibold"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/eventTitle"/>
+
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:id="@+id/artistImage"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_below="@id/genre"
+            android:scaleType="centerCrop"
+            tools:src="@tools:sample/avatars"
+            android:contentDescription="Imagen del artista" />
+
+        <TextView
+            android:id="@+id/ciudadConcierto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@id/artistImage"
+            android:text="Ciudad"
+            android:fontFamily="@font/montserratsemibold"
+            android:layout_below="@id/genre"
+            android:layout_marginLeft="5dp"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/lugarConcierto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/artistImage"
+            android:text="Venue"
+            android:fontFamily="@font/montserratsemibold"
+            android:layout_below="@id/ciudadConcierto"
+            android:layout_marginLeft="5dp"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/fechaConcierto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/artistImage"
+            android:text="dd/mm/aaaa"
+            android:fontFamily="@font/montserratsemibold"
+            android:layout_below="@id/lugarConcierto"
+            android:textSize="20sp"
+            android:layout_marginLeft="5dp"
+            />
+
+        <TextView
+            android:id="@+id/horaConcierto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/artistImage"
+            android:text="Hora: HH:MM"
+            android:fontFamily="@font/montserratsemibold"
+            android:layout_below="@id/fechaConcierto"
+            android:textSize="20sp"
+            android:layout_marginLeft="5dp" />
+
+        <TextView
+            android:id="@+id/galleryTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/horaConcierto"
+            android:text="Galería del artista"
+            android:fontFamily="@font/montserratb"
+            android:textSize="25sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:layout_below="@id/galleryTitle"
+            android:layout_marginTop="40dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/scrollImage1"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="5dp"
+                    tools:srcCompat="@android:drawable/ic_menu_camera"
+                    android:contentDescription="Imagen de galería 1" />
+
+                <ImageView
+                    android:id="@+id/scrollImage2"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="5dp"
+                    android:contentDescription="Imagen de galería 2"
+                    tools:srcCompat="@android:drawable/ic_menu_camera" />
+
+                <ImageView
+                    android:id="@+id/scrollImage3"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="5dp"
+                    tools:srcCompat="@android:drawable/ic_menu_camera"
+                    android:contentDescription="Imagen de galería 3" />
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/galleryTitle"
+            android:layout_marginTop="300dp"
+            android:orientation="horizontal"
+            android:paddingTop="60dp">
+
+            <Button
+                android:id="@+id/irStio"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Ir a la ubicación"
+                android:layout_toRightOf="@+id/guardarMomentos"
+                android:layout_alignParentBottom="true"
+                android:textSize="13sp"
+                android:background="@drawable/buttonbackground"
+                android:fontFamily="@font/montserratsemibold"
+                android:layout_marginRight="5dp"
+                android:layout_weight="0.5" />
+
+            <Button
+                android:id="@+id/guardarMomentos"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Guardar Momento"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="@font/montserratsemibold"
+                android:textSize="13sp"
+                android:background="@drawable/buttonbackground"
+                android:layout_marginRight="5dp"
+                android:layout_weight="0.5" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,38 @@
+{"usuarios":[
+    {
+        "Nombre": "Sebastian",
+        "Apellido": "Cordoba",
+        "Ciudad de residencia": "Madrid",
+        "Correo electrónico": "jusecorval",
+        "Contraseña": "123",
+        "Repita la contraseña": "123",
+        "Rol": "admin"
+    },
+    {
+        "Nombre": "Juan",
+        "Apellido": "Pérez",
+        "Ciudad de residencia": "Ciudad de México",
+        "Correo electrónico": "juan.perez",
+        "Contraseña": "123",
+        "Repita la contraseña": "123",
+        "Rol": "user"
+    },
+    {
+        "Nombre": "María",
+        "Apellido": "González",
+        "Ciudad de residencia": "Bogotá",
+        "Correo electrónico": "maria.gonzalez@example.com",
+        "Contraseña": "contraseña456",
+        "Repita la contraseña": "contraseña456",
+        "Rol": "user"
+    },
+    {
+        "Nombre": "Carlos",
+        "Apellido": "Fernández",
+        "Ciudad de residencia": "Buenos Aires",
+        "Correo electrónico": "carlos.fernandez@example.com",
+        "Contraseña": "contraseña789",
+        "Repita la contraseña": "contraseña789",
+        "Rol": "user"
+    }
+]}
